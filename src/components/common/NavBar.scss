@@ -1,0 +1,49 @@
+@import './../../constants.scss';
+
+$navBarWidth: 100%;
+$navBarHeight: 80px;
+$paddingLeftRight: 180px;
+$navBarTextColor: #030303;
+$navBarBackgroundColor: #d3cfcf;
+$linksBlockWidth: 900px;
+
+.navbar {
+    @extend %flex-row-center;
+    justify-content: center;
+    height: $navBarHeight;
+    width: $navBarWidth;
+    box-shadow: 1px 3px 7px black;
+    background: linear-gradient(to left, #5e5e5e, #adadad);
+
+    .logo {
+        margin-right: 40px;
+    }
+
+    .links {
+        @extend %flex-row-center;
+        justify-content: space-evenly;
+        height: 100%;
+        width: $linksBlockWidth;
+
+        .link {
+            @extend %flex-row-center;
+            align-items: center;
+            justify-content: center;
+            height: inherit;
+            width: 100%;
+            color: $navBarTextColor;
+            font-size: 18px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: rgb(37, 37, 37);
+                color: #adadad;
+            }
+        }
+    }
+}
+
+
+
+
+

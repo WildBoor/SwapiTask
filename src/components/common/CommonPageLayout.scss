@@ -1,0 +1,9 @@
+@import './../../constants.scss';
+
+.content {
+    @extend %flex-column-center;
+    justify-content: center;
+    align-items: center;
+    // height: 100%;
+    padding: 30px;
+}

@@ -1,0 +1,13 @@
+@import './../../../constants.scss';
+
+.planet-residents {
+    @extend %flex-column-center;
+    flex-grow: 1;
+    height: inherit;
+
+    .no-residents {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+}

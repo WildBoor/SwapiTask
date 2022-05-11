@@ -1,0 +1,74 @@
+@import './../../../constants.scss';
+
+.resident-preview {
+    @extend %flex-row-center;
+    width: 90%;
+    height: 140px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(180, 180, 180);
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 5px black;
+
+    &:hover {
+        box-shadow: 1px 2px 9px black;
+        cursor: pointer;
+    }
+
+    .img {
+        height: 100px;
+        width: 100px;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        margin-right: 20px;
+        box-shadow: 1px 1px 4px black;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 1;
+        height: 100%;
+
+        .name {
+            @extend %flex-row-center;
+            justify-content: flex-start;
+            width: 100%;
+            height: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .additional {
+            @extend %flex-row-center;
+            justify-content: flex-start;
+            flex-flow: wrap;
+
+            .point {
+                width: auto;
+                height: 30px;
+                padding: 5px;
+                border-radius: 8px;
+                margin-right: 15px;
+                margin-bottom: 10px;
+                background-color: #dfdfdf;
+
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

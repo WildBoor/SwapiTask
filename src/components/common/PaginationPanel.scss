@@ -1,0 +1,35 @@
+@import './../../constants.scss';
+
+$panelHeight: 40px;
+$pageLinkButtonWidth: 60px;
+
+.pagination-panel {
+    @extend %flex-row-center;
+    justify-content: center;
+    width: auto;
+    height: $panelHeight;
+    background-color: black;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    a {
+        @extend %flex-row-center;
+        justify-content: center;
+        height: inherit;
+        width: $pageLinkButtonWidth;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #343333;
+        }
+
+        &.disabled {
+            background-color: #343333;
+            pointer-events: none;
+        }
+    }
+
+}

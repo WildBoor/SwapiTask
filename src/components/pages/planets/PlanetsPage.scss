@@ -1,0 +1,12 @@
+.planets__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    width: 90%;
+    height: auto;
+
+    a {
+        text-decoration: none;
+    }
+}
